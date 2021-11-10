@@ -12,7 +12,7 @@ Getestet wurde die Zitationsvorlage mit Zotero (https://www.zotero.org/) nach be
 
 ## Angaben im Fließtext bzw. in der Fußnote
 
-## Automatische Erstellung
+### Automatische Erstellung
 - Hochzahl im Fließtext
 - Kürzel in der Fußnote
 - Drei oder mehr Autoren sind mit "et al." gekennzeichnet
