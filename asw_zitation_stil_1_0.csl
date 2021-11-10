@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style class="note" version="1.0" delimiter-precedes-et-al="never" delimiter-precedes-last="always" name-as-sort-order="all" xmlns="http://purl.org/net/xbiblio/csl">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>ASW_Zitation_Stil_1_0</title>
+    <title-short>ASW Style</title-short>
+    <id>http://www.zotero.org/styles/asw_zitation_stil_1_0</id>
+    <link rel="self" href="http://www.zotero.org/styles/asw_zitation_stil_1_0"/>
+    <author>
+      <name>Lucas Orth</name>
+    </author>
+    <updated>2021-11-10T10:17:52+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <locale xml:lang="de">
+    <terms>
+      <term name="et-al">et al.</term>
+    </terms>
+  </locale>
+  <citation>
+    <layout>
+      <names variable="author">
+        <name form="short" delimiter-precedes-et-al="never" delimiter-precedes-last="always" et-al-min="3" et-al-use-first="1" sort-separator=","/>
+        <substitute>
+          <names variable="editor" delimiter="," suffix=" (Hrsg.)"/>
+        </substitute>
+      </names>
+      <date date-parts="year" form="text" variable="issued" prefix=" (" suffix=")"/>
+      <text variable="locator" prefix=", S. "/>
+    </layout>
+  </citation>
+  <bibliography name-as-sort-order="all">
+    <sort>
+      <key variable="author"/>
+      <key variable="editor"/>
+      <key variable="title"/>
+    </sort>
+    <layout>
+      <names variable="author">
+        <name delimiter=" / " name-as-sort-order="all"/>
+        <substitute>
+          <names variable="editor" suffix=" (Hrsg.)"/>
+        </substitute>
+      </names>
+      <text variable="title" prefix=": "/>
+      <choose>
+        <if type="book" match="any">
+          <text variable="edition" prefix=". " suffix=". Auflage"/>
+          <text variable="publisher-place" prefix=", "/>
+          <text variable="publisher" prefix=": "/>
+          <date date-parts="year" form="text" variable="issued" prefix=", "/>
+        </if>
+        <else-if type="article article-journal article-magazine article-newspaper" match="any">
+          <text variable="container-title" prefix=". In: "/>
+          <text variable="volume" prefix=", Jg."/>
+          <text variable="issue" prefix=", H."/>
+          <text variable="page" prefix=", S. "/>
+          <date date-parts="year" form="text" variable="issued" prefix=", "/>
+        </else-if>
+        <else>
+          <date date-parts="year-month" form="text" variable="issued" prefix=". "/>
+          <text variable="URL" prefix=", "/>
+          <date form="numeric" variable="accessed" prefix=", (Zugriff " suffix=")"/>
+        </else>
+      </choose>
+    </layout>
+  </bibliography>
+</style>
