@@ -21,6 +21,7 @@ Getestet wurde die Zitationsvorlage mit Zotero (https://www.zotero.org/) nach be
 - "Vgl." bei indirekten Zitaten
 - "f." für 2 aufeinander folgende Seiten
 - "ff." für mehr als 2 aufeinander folgende Seiten
+- "." hinter Fußnote wenn Angabe nicht per Seitenzahl sondern z.B. Kapitel
 
 ## Literaturverzeichnis
 
